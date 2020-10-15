@@ -1,0 +1,21 @@
+.nav_link {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 8px 0;
+    color: var(--text-black);
+    display: inline-block;
+}
+
+.nav_link:hover {
+    color: var(--text-primary);
+}
+
+.nav_icon {
+    margin-right: 5px;
+    width: 30px !important;
+}
+
+.active_side_nav {
+    color: var(--text-primary);
+}

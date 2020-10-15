@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+src/Components/LoginItems/LoginManager/Firebase.config.js
 # testing
 /coverage
 

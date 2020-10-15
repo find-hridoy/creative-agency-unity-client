@@ -1,0 +1,54 @@
+/* Dashboard Background */
+.extract_bg {
+    background: var(--light-bg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.common_title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--text-dark);
+}
+
+.clients_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-dark);
+}
+
+/* Dashboard Input Fields */
+.order_card {
+    border: none;
+    background: transparent;
+}
+
+.text_field {
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.396px;
+    color: var(--text-light);
+    border: 1px solid transparent;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.text_field::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.text_field:focus {
+    box-shadow: none;
+    color: var(--text-light);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.text_field:focus.text_field::placeholder {
+    color: var(--text-light);
+}

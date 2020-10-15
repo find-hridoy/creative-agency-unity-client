@@ -1,0 +1,18 @@
+.header {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0 90px 0;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    background: var(--warning-bg);
+    height: 100%;
+    width: 100%;
+    bottom: 70px;
+    z-index: -1;
+    transform: skewY(-6deg);
+}

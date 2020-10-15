@@ -1,0 +1,20 @@
+.t_head {
+    background: #F5F6FA;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-light-down)
+}
+
+.t_data {
+    font-size: 16px;
+    color: var(--text-dark)
+}
+
+.select_field {
+    width: 120px;
+    margin-right: 0;
+}
+
+.select_field:focus {
+    box-shadow: none;
+}

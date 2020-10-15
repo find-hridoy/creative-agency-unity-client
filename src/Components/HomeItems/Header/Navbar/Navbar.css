@@ -1,0 +1,33 @@
+.logo {
+    width: 150px;
+}
+
+.nav_links {
+    font-size: 14px;
+    color: var(--text-semi-dark);
+    border-bottom: 3px solid transparent;
+    margin-right: 20px;
+    letter-spacing: 0.396px;
+    transition: all ease-in-out 0.3s;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: inline-block;
+}
+
+.nav_links:hover {
+    border-bottom: 3px solid var(--text-primary);
+    color: var(--text-semi-dark);
+}
+
+.active_nav {
+    border-bottom: 3px solid var(--text-primary);
+    font-weight: 500;
+    color: var(--text-semi-dark);
+}
+
+/* Responsive Area */
+@media only screen and (max-width: 990px) {
+    .nav_links {
+        margin-right: 0;
+    }
+}

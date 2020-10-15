@@ -1,0 +1,19 @@
+.works {
+    background: var(--text-dark);
+    padding-top: 80px;
+}
+
+.swiper-container {
+    height: 350px;
+}
+
+.swiper-pagination-bullet {
+    background: #242A65 !important;
+    width: 12px !important;
+    height: 12px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--warning-bg) !important;
+}

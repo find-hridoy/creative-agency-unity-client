@@ -1,0 +1,35 @@
+.footer_card {
+    border: none;
+    background: transparent;
+}
+
+.input_field {
+    width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.396px;
+    color: var(--text-light);
+    border: none;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.input_field::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.input_field:focus {
+    box-shadow: none;
+    color: var(--text-light);
+}
+
+.input_field:focus.input_field::placeholder {
+    color: var(--text-light);
+}
+
+.error_text {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 0;
+}

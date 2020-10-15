@@ -1,0 +1,29 @@
+.banner_text {
+    width: 90%;
+}
+
+.banner_title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    color: var(--text-dark);
+}
+
+.banner_description {
+    letter-spacing: 0.005em;
+    color: var(--text-black);
+    line-height: 24px;
+    padding: 10px 0;
+}
+
+/* Responsive Area */
+@media only screen and (max-width: 990px) {
+    .banner_text {
+        width: 100%;
+    }
+
+    .banner_img {
+        display: none;
+    }
+}

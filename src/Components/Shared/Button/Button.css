@@ -1,0 +1,33 @@
+/* Button */
+.button_common {
+    border: none;
+    background: transparent;
+}
+
+.button_common:focus {
+    outline: none;
+}
+
+.dark_button {
+    background: var(--text-dark);
+    border-radius: 5px;
+    color: var(--text-white);
+    border: none;
+    padding: 10px 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dark_button:focus {
+    outline: none;
+}
+
+.success_button {
+    background: var(--success-btn);
+    border-radius: 5px;
+    color: var(--text-white);
+    border: none;
+    padding: 13px 40px;
+    display: inline-block;
+    cursor: pointer;
+}

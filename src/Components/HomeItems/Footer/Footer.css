@@ -1,0 +1,35 @@
+.footer {
+    background: var(--warning-bg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.396px;
+    color: var(--text-semi-dark);
+    padding: 15px 0;
+}
+
+.footer_description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.396px;
+    color: var(--text-light);
+
+}
+
+.footer_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.396px;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px 0;
+}

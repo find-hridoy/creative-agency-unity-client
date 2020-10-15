@@ -1,0 +1,38 @@
+.add_service_card {
+    border: none;
+    border-radius: 20px;
+    padding: 30px 35px;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--text-semi-dark);
+}
+
+.add_text_field {
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.396px;
+    color: var(--text-light);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* margin-top: 10px; */
+    padding: 12px;
+}
+
+.add_text_field::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.add_text_field:focus {
+    box-shadow: none;
+    color: var(--text-light);
+    ;
+}
+
+.add_text_field:focus.add_text_field::placeholder {
+    color: var(--text-light);
+}

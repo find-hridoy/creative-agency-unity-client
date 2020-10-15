@@ -1,0 +1,24 @@
+.login_card {
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.login_title {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-black);
+}
+
+.login_btn {
+    color: var(--text-black);
+    padding: 10px 80px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    border-radius: 57px;
+}
+
+.login_text {
+    font-size: 16px;
+    font-weight: 500;
+}
