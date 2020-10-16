@@ -22,8 +22,8 @@ const Order = () => {
     return (
         <section className="container-fluid py-4">
             <div className="row">
-                <div className="col-md-2 pl-4">
-                    <Sidebar id={id} />
+                <div className="col-8 col-sm-8 col-md-8 col-lg-2 pl-4">
+                    <Sidebar />
                 </div>
                 <div className="col-md-10">
                     <div className="d-flex justify-content-between mx-5">
@@ -32,8 +32,8 @@ const Order = () => {
                     </div>
                     <div className="extract_bg">
                         <div className="row">
-                            <div className="col-md-6 ml-5 mt-5">
-                                <OrderForm loggedInUser={loggedInUser} serviceData={serviceData} />
+                            <div className="col-8 col-sm-8 col-md-8 col-lg-6 ml-5 mt-5">
+                                <OrderForm serviceData={serviceData} />
                             </div>
                         </div>
                     </div>

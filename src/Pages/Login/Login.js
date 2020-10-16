@@ -3,7 +3,7 @@ import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import logo from '../../Images/logo/logo.png';
 import './Login.css';
 import { UserContext } from '../../App';
-import { googleSignIn, initializeFramework } from '../../Components/LoginItems/LoginManager/LoginManager';
+import { googleSignIn, initializeFramework, storeAuthToken } from '../../Components/LoginItems/LoginManager/LoginManager';
 import Button from '../../Components/Shared/Button/Button';
 
 const Login = () => {
@@ -22,11 +22,20 @@ const Login = () => {
             .then(res => {
                 setLoggedInUser(res);
                 replace(from);
+                // authToken();
             })
             .catch(err => {
                 setLoggedInUser(err);
             })
     }
+    // const authToken = () => {
+    //     storeAuthToken()
+    //         .then(result => {
+    //             sessionStorage.setItem('token', result);
+    //             replace(from);
+    //         })
+    //         .catch(error => console.log(error))
+    // }
     return (
         <div className="container">
             <div className="d-flex align-items-center justify-content-center flex-column mt-5">

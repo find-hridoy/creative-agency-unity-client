@@ -19,7 +19,7 @@ const AddServiceForm = () => {
             .then(res => res.json())
             .then(data => {
                 if (data) {
-                    alert("Add Service Successfully");
+                    alert("Service Add Successfully");
                 }
             })
             .catch(err => {

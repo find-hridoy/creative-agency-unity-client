@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { useForm } from "react-hook-form";
 import { UserContext } from '../../../App';
 import Button from '../../Shared/Button/Button';
-// import './AddServiceForm.css';
 
 const MakeAdminForm = () => {
     const { handleSubmit, register, errors } = useForm({
@@ -22,7 +21,7 @@ const MakeAdminForm = () => {
             .then((res) => res.json())
             .then((data) => {
                 if (data) {
-                    alert('Successfully Added new Admin');
+                    alert('Successfully Add a New Admin');
                 }
             })
     }

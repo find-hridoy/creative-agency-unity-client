@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
-import { UserContext } from '../../../../App';
 import logo from '../../../../Images/logo/logo.png';
 import Button from '../../../Shared/Button/Button';
 import './Navbar.css';
@@ -9,6 +8,9 @@ const Navbar = () => {
     const { push } = useHistory();
     const handleClick = () => {
         push('/dashboard/serviceList');
+    }
+    const handleAdminClick = () => {
+        push('/dashboard/totalServiceList');
     }
     return (
         <div>
@@ -35,6 +37,7 @@ const Navbar = () => {
                         </ul>
                         <div className="d-flex justify-content-center">
                             <Button buttonName={'Login'} handleClick={handleClick} className={'dark_button'} />
+                            <button onClick={handleAdminClick} className="dark_button ml-3">Admin</button>
                         </div>
                     </div>
                 </div>

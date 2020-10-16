@@ -12,6 +12,7 @@ import ClientsTotalService from './Pages/Dashboard/ClientsTotalService/ClientsTo
 import Login from './Pages/Login/Login';
 import ServiceList from './Pages/Dashboard/ServiceList/ServiceList';
 import PrivateRoute from './Components/LoginItems/PrivateRoute/PrivateRoute';
+import NotFound from './Pages/NotFound/NotFound';
 
 export const UserContext = createContext();
 function App() {
@@ -44,6 +45,9 @@ function App() {
           <PrivateRoute path="/dashboard/makeAdmin">
             <MakeAdmin />
           </PrivateRoute>
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
       </Router>
     </UserContext.Provider>

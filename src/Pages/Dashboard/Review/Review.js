@@ -8,7 +8,7 @@ const Review = () => {
     return (
         <section className="container-fluid py-4">
             <div className="row">
-                <div className="col-md-2 pl-4">
+                <div className="ol-8 col-sm-8 col-md-8 col-lg-2 pl-4">
                     <Sidebar />
                 </div>
                 <div className="col-md-10">
@@ -18,7 +18,7 @@ const Review = () => {
                     </div>
                     <div className="extract_bg">
                         <div className="row">
-                            <div className="col-md-6 ml-5 mt-5">
+                            <div className="col-8 col-sm-8 col-md-8 col-lg-6 ml-5 mt-5">
                                 <ReviewForm />
                             </div>
                         </div>

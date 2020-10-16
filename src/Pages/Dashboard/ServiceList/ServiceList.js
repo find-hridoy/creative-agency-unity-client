@@ -13,12 +13,14 @@ const ServiceList = () => {
             .then(data => {
                 setOrders(data)
             })
-            .catch(err => console.log(err))
-    }, []);
+            .catch(err => {
+                // Error
+            })
+    }, [loggedInUser.email]);
     return (
         <section className="container-fluid py-4">
             <div className="row">
-                <div className="col-md-2 pl-4">
+                <div className="col-8 col-sm-8 col-md-8 col-lg-2 pl-4">
                     <Sidebar />
                 </div>
                 <div className="col-md-10">
@@ -28,14 +30,8 @@ const ServiceList = () => {
                     </div>
                     <div className="extract_bg">
                         <div className="row">
-                            <div className="col-md-10 ml-5 mt-5">
+                            <div className="col-8 col-sm-8 col-md-8 col-lg-6 ml-5 mt-5">
                                 <div className="row g-4">
-                                    {
-                                        orders.length === 0 &&
-                                        <div className="d-flex justify-content-center">
-                                            <img style={{ width: '10%', background: 'transparent' }} src={loading} alt="Loading..." />
-                                        </div>
-                                    }
                                     {
                                         orders.map((order, index) => <ServiceListCard order={order} key={index} />)
                                     }
@@ -44,6 +40,14 @@ const ServiceList = () => {
                         </div>
                     </div>
                 </div>
+                {
+                    orders.length === 0 &&
+                    <div className="container-fluid mt-5">
+                        <div className="d-flex justify-content-center">
+                            <img style={{ width: '10%', background: 'transparent' }} src={loading} alt="Loading..." />
+                        </div>
+                    </div>
+                }
             </div>
         </section>
     );

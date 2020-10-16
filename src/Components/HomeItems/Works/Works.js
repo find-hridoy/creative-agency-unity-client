@@ -2,13 +2,13 @@ import React from 'react';
 import './Works.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
-import SwiperCore, { Pagination } from 'swiper'
+import SwiperCore, { Autoplay, Pagination } from 'swiper'
 import carousel1 from '../../../Images/carousel/carousel-1.png';
 import carousel2 from '../../../Images/carousel/carousel-2.png';
 import carousel4 from '../../../Images/carousel/carousel-4.png';
 import carousel5 from '../../../Images/carousel/carousel-5.png';
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 const worksImage = [
     {
         imgUrl: carousel1
@@ -18,15 +18,6 @@ const worksImage = [
     },
     {
         imgUrl: carousel4
-    },
-    {
-        imgUrl: carousel5
-    },
-    {
-        imgUrl: carousel4
-    },
-    {
-        imgUrl: carousel2
     }
 ];
 const Works = () => {
@@ -41,8 +32,13 @@ const Works = () => {
                         pagination={{ clickable: true }}
                         spaceBetween={50}
                         slidesPerView={3}
-                    // onSlideChange={() => console.log('slide change')}
-                    // onSwiper={(swiper) => console.log(swiper)}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false
+                        }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         {
                             worksImage.map((img, index) =>

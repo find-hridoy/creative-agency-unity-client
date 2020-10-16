@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from "react-hook-form";
 import Button from '../../Shared/Button/Button';
 
-const OrderForm = ({ loggedInUser, serviceData }) => {
-    const { name, email } = loggedInUser;
+const OrderForm = ({ serviceData }) => {
     const { handleSubmit, register, errors } = useForm({
         mode: onchange
     });
@@ -32,13 +31,12 @@ const OrderForm = ({ loggedInUser, serviceData }) => {
     return (
         <div className="card order_card">
             <form onSubmit={handleSubmit(onSubmit)} className="form-group">
-
                 {/* Name */}
-                <input className="form-control text_field" type="text" placeholder="Your name / company's name" name="name" defaultValue={name} ref={register({ required: "name is required", pattern: { value: /[a-zA-Z]+\s[a-zA-Z-]/, message: "invalid name" } })} />
+                <input className="form-control text_field" type="text" placeholder="Your name / company's name" name="name" ref={register({ required: "name is required", pattern: { value: /[a-zA-Z]+\s[a-zA-Z-]/, message: "invalid name" } })} />
                 <p className="error_text">{errors.name && errors.name.message}</p>
 
                 {/* Email */}
-                <input className="form-control text_field" type="email" placeholder="Your email address" name="email" defaultValue={email} ref={register({ required: "email address is required", pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "invalid email address" } })} />
+                <input className="form-control text_field" type="email" placeholder="Your email address" name="email" ref={register({ required: "email address is required", pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "invalid email address" } })} />
                 <p className="error_text">{errors.email && errors.email.message}</p>
 
                 {/* Service  Title*/}
@@ -46,13 +44,13 @@ const OrderForm = ({ loggedInUser, serviceData }) => {
                 <p className="error_text">{errors.title && errors.title.message}</p>
 
                 {/* Details */}
-                <textarea className="form-control text_field" rows="3" placeholder="Project Details" name="details" defaultValue={(serviceData ? serviceData.description : "")} ref={register({ required: "details is required", pattern: { value: /[a-zA-Z]+\s[a-zA-Z-]/, message: "invalid details" } })} />
+                <textarea className="form-control text_field" rows="3" placeholder="Project Details" name="details" ref={register({ required: "details is required", pattern: { value: /[a-zA-Z]+\s[a-zA-Z-]/, message: "invalid details" } })} />
                 <p className="error_text">{errors.details && errors.details.message}</p>
 
                 <div className="row g-2">
                     <div className="col-md-6">
                         {/* Price*/}
-                        <input className="form-control text_field" type="number" placeholder="Price" name="price" defaultValue="59" ref={register({ required: "price is required" })} />
+                        <input className="form-control text_field" type="number" placeholder="Price" name="price" defaultValue={Math.floor(Math.random() * 99)} ref={register({ required: "price is required" })} />
                         <p className="error_text">{errors.price && errors.price.message}</p>
                     </div>
                     <div className="col-md-6">

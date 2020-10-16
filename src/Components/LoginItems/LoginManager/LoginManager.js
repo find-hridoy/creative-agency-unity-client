@@ -34,8 +34,8 @@ export const googleSignIn = () => {
         });
 }
 
-// //  Id Token
-// export const authToken = () => {
+//  Get Token
+// export const storeAuthToken = () => {
 //     return firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
 //         .then(idToken => {
 //             const token = idToken;
