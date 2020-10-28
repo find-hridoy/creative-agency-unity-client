@@ -5,6 +5,7 @@
 
 <h3 align="left">Languages and Tools:</h3>
 **React.js, Bootstrap, Firebase, MongoDB, Node.js, Express.js, HTML, CSS**
+**React, Javascript,MongoDB, Firebase, HTML, CSS**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
