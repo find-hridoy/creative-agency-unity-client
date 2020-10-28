@@ -1,7 +1,7 @@
 -This is a project where the customer can now buy the course of his choice.<br/>
 -This is a dynamic website. <br/>
 -The desired data from the database is displayed on the site.<br/>
-**[Website](https://creative-agency-unity.web.app/)**
+-**[Live Website](https://creative-agency-unity.web.app/)**
 
 <h3 align="left">Languages and Tools:</h3>
 
@@ -13,4 +13,4 @@
 <a href="https://fb.com/find.hridoy3" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="find.hridoy3" height="30" width="40" /></a>
 </p>
 
-<p><img width="50%" src="https://github-readme-stats.vercel.app/api?username=find-hridoy&show_icons=true&locale=en" alt="find-hridoy" /></p>
+<p><img  width="50%" src="https://github-readme-stats.vercel.app/api/top-langs?username=find-hridoy&show_icons=true&locale=en&layout=compact" alt="find-hridoy" /></p>
