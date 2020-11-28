@@ -1,6 +1,6 @@
--This is a project where the customer can now buy the course of his choice.<br/>
--This is a dynamic website. <br/>
--The desired data from the database is displayed on the site.<br/>
+❖ User and Admin login system.<br/>
+❖ Users can order service and then manage it.<br/>
+❖ Admin can manage users orders by dashboard.<br/>
 -**[Live Website](https://creative-agency-unity.web.app/)**
 
 <h3 align="left">Languages and Tools:</h3>
